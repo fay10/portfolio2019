@@ -1,0 +1,81 @@
+{
+	"name": "fayportfolio",
+	"version": "1.0.0",
+	"description": "portfolio 2019",
+	"author": "Fay Schouten",
+	"private": true,
+	"scripts": {
+		"dev": "sh scripts/dev.sh",
+		"devlocal": "sh scripts/devlocal.sh",
+		"staging": "sh scripts/staging.sh",
+		"production": "sh scripts/production.sh",
+		"lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+		"lintfix": "eslint --ext .js,.vue --ignore-path .gitignore . --fix",
+		"precommit": "lint",
+		"generate": "nuxt generate",
+		"stylelint": "stylelint '**/*.vue' '**/*.scss'",
+		"stylelint:fix": "stylelint '**/*.vue' '**/*.scss' --fix"
+	},
+	"dependencies": {
+		"@fortawesome/fontawesome-svg-core": "^1.2.18",
+		"@fortawesome/free-solid-svg-icons": "^5.8.2",
+		"@fortawesome/vue-fontawesome": "^0.1.6",
+		"@nuxtjs/axios": "^5.4.1",
+		"@nuxtjs/google-analytics": "^2.2.0",
+		"nuxt": "^2.6.1",
+		"vee-validate": "^2.2.7",
+		"vue-awesome-swiper": "^3.1.3",
+		"vue-slick": "^1.1.15",
+		"vue-svgicon": "^3.2.6"
+	},
+	"devDependencies": {
+		"@fortawesome/fontawesome-free": "^5.8.2",
+		"babel-eslint": "^10.0.1",
+		"eslint": "^5.16.0",
+		"eslint-config-prettier": "^4.1.0",
+		"eslint-friendly-formatter": "^4.0.1",
+		"eslint-loader": "^2.1.1",
+		"eslint-plugin-prettier": "^3.0.0",
+		"eslint-plugin-vue": "^5.2.2",
+		"henris": "^0.6.9",
+		"node-sass": "^4.9.3",
+		"nuxt-rfg-icon": "^0.6.3",
+		"sass-loader": "^7.1.0",
+		"stylelint": "^9.10.1",
+		"stylelint-logical-order": "^0.0.5",
+		"stylelint-order": "^2.2.0",
+		"vue-svg-icon": "^1.2.9"
+	},
+	"browserslist": [
+		"last 2 versions",
+		"not dead"
+	],
+	"stylelint": {
+		"rules": {
+			"at-rule-no-unknown": [
+				true,
+				{
+					"ignoreAtRules": [
+						"if",
+						"for",
+						"else",
+						"each",
+						"mixin",
+						"include",
+						"content"
+					]
+				}
+			],
+			"order/order": [
+				"custom-properties",
+				"dollar-variables",
+				"declarations",
+				"rules"
+			],
+			"indentation": "tab"
+		},
+		"extends": [
+			"stylelint-logical-order"
+		]
+	}
+}
