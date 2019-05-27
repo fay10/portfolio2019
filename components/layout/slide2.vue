@@ -187,7 +187,7 @@ export default {
 input[type='radio'],
 label {
 	position: relative;
-	top: 20rem;
+	top: 18rem;
 	left: 2.5rem;
 }
 input[type='radio'] {

@@ -9,19 +9,6 @@
 				<div class="contact-title">
 					<p>I will respond as soon as possible</p>
 				</div>
-				<div class="contact-form">
-					<form class="contact-form" action="contact-form-handler.php" method="post">
-						<input type="text" name="name" class="form-control" placeholder="Your Name" required>
-						<br>
-						<input type="email" name="email" class="form-control" placeholder="Your Email" required>
-						<br>
-						<textarea name="message" class="form-control" placeholder="Message" rows="4" required></textarea>
-						<br>
-						<input type="submit" class="form-control submit" value="send message">
-						<br>
-					</form>
-				</div>
-
 				<div class="flex__row">
 					<div class="flex__column">
 						<a target="_blank" rel="noopener" href="https://www.facebook.com/fay.schouten">
@@ -182,6 +169,9 @@ img:not([alt]), img[alt=''] {
 	height: 100vh;
 	display: flex;
 	font-family: 'Sniglet';
+	&-title {
+		margin-bottom: 80px;
+	}
 	h2 {
 		color: #f58a1a;
 		font-weight: 13;
@@ -278,38 +268,5 @@ img:not([alt]), img[alt=''] {
 }
 .koifish-second {
 	display: none;
-}
-.contact-form {
-	margin-top: 2rem;
-}
-.form-control {
-	width: 600px;
-	background: transparent;
-	border: none;
-	outline: none;
-	border-bottom: 1px solid gray;
-	color: #fff;
-	margin-bottom: 2rem;
-	font-size: 16px;
-}
-input {
-	height: 45px;
-}
-button {
-	background: red;
-}
-.submit {
-	background-color: #f58a1a;
-	border-color: transparent;
-	color: white;
-	font-size: 20px;
-	margin-top: 20px;
-	margin-bottom: 80px;
-	width: grid(4);
-	opacity: 0.8;
-	&:hover {
-		opacity: 1;
-		cursor: poiter;
-	}
 }
 </style>

@@ -6,7 +6,7 @@
 				<p>
 					My name is Fay Schouten and I am eighteen years old. I am currently studying at the Grafisch Lyceum Utrecht, to
 					become a professional webdsigner. I am in my third year, one year until graduation. I am a very ambitous student and I always say yes to challenges.
-					<a href="https://www.matise.nl/">my current internship is at Matise</a>
+					<a href="https://www.matise.nl/" rel="noopener" target="blank">My current internship is at Matise</a>
 				</p>
 				<div class="flex__row">
 					<div class="flex__column">
