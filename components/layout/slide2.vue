@@ -144,9 +144,9 @@ export default {
 		opacity: 0.1
 	}
 	width: 100%;
-	max-width: 540px;
-	height: 540px;
-	border-radius: 580px;
+	max-width: 480px;
+	height: 480px;
+	border-radius: 480px;
 	position: absolute;
 	opacity: 0;
 	background-size: cover;
