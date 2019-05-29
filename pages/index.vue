@@ -23,11 +23,11 @@
 							tabindex="0"
 							role="button"
 							aria-label="Go to slide 1"
-						>home</span>
+						></span>
 						<div class="swiper-pagination__hide-nav">
-							<span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2">projects</span>
-							<span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3">about me</span>
-							<span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4">contac</span>
+							<span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span>
+							<span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span>
+							<span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span>
 						</div>
 					</div>
 				</div>
@@ -108,6 +108,9 @@ export default {
 		margin-top: 20px;
 		cursor: pointer;
 		display: block;
+		@media #{$small-only} {
+			display: none;
+		}
 
 		&-active {
 			background-image: url('~static/images/lantern.png');

@@ -105,7 +105,7 @@ export default {};
 					margin-bottom: 1rem;
 				}
 				@media #{$small-only} {
-					font-size: 12px;
+					font-size: 11px;
 				}
 			}
 		}
@@ -144,9 +144,13 @@ export default {};
 		display: flex;
 		p {
 			font-size: 16px;
+			@media #{$small-only} {
+				font-size: 14px;
+			}
 		}
 		@media #{$medium-down} {
 			display: inline-block;
+			font-size: 14px;
 		}
 	}
 	&__column {
@@ -161,14 +165,14 @@ export default {};
 			@media #{$small-only} {
 				display: inline-grid;
 				margin-left: 2rem;
+				margin-top: 18px;
 			}
 			img {
-				margin-top: 40px;
 				width: 45px;
 			}
 		}
 		@media (max-width: 1440px) {
-			height: 2rem;
+			height: 3rem;
 		}
 	}
 }
@@ -183,8 +187,8 @@ export default {};
 		margin-left: 30rem;
 	}
 	@media #{$small-only} {
-		margin: 0 auto;
-		padding-top: 2.5rem;
+		display: none;
+		font-size: 14px;
 	}
 }
 </style>

@@ -212,7 +212,7 @@ img:not([alt]), img[alt=''] {
 					margin-bottom: 1rem;
 				}
 				@media #{$small-only} {
-					font-size: 12px;
+					font-size: 11px;
 				}
 			}
 		}
@@ -233,9 +233,13 @@ img:not([alt]), img[alt=''] {
 		display: flex;
 		p {
 			font-size: 16px;
+			@media #{$small-only} {
+				font-size: 14px;
+			}
 		}
 		@media #{$medium-down} {
 			display: inline-block;
+			font-size: 14px;
 		}
 	}
 	&__column {
@@ -247,6 +251,9 @@ img:not([alt]), img[alt=''] {
 		}
 		@media (max-width: 1440px) {
 			height: 2rem;
+		}
+		@media #{$small-only} {
+			height: 3rem;
 		}
 	}
 }
@@ -264,6 +271,7 @@ img:not([alt]), img[alt=''] {
 	@media #{$small-only} {
 		margin: 0 auto;
 		padding-top: 2.5rem;
+		font-size: 14px;
 	}
 }
 .koifish-second {

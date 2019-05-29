@@ -132,6 +132,9 @@ export default {
 	height: 300px;
 }
 .item {
+	@media #{$small-only} {
+		height: 400px !important; 
+	}
 	a{
 		z-index: 99;
 		position: absolute;
@@ -141,7 +144,11 @@ export default {
 		min-width: 590px;
 		height: 500px;
 		border-radius: 540px;
-		opacity: 0.1
+		opacity: 0.1;
+		@media #{$small-only} {
+			width: 300px;
+			height: 350px;
+		}
 	}
 	width: 100%;
 	max-width: 480px;
@@ -195,17 +202,19 @@ input[type='radio'] {
 }
 label {
 	display: inline-block;
-	width: 10px;
-	height: 10px;
+	width: 12px;
+	height: 12px;
 	border-radius: 50%;
 	margin-right: 20px;
 	background: white;
 	cursor: pointer;
 	@media #{$small-only} {
-		top: 18rem;
-		left: -2rem;
+		top: 14rem;
+		left: -5rem;
 		width: 8px;
 		height: 8px;
+		width: 15px;
+		height: 15px;
 	}
 }
 label:hover {
