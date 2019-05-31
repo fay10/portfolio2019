@@ -159,6 +159,7 @@ export default {};
 		display: flex;
 		&--icon {
 			margin-left: grid(1);
+			margin-top: 2rem;
 			@media #{$medium-down} {
 				margin-left: 0;
 			}
