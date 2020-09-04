@@ -38,7 +38,7 @@
 		"eslint-plugin-prettier": "^3.0.0",
 		"eslint-plugin-vue": "^5.2.2",
 		"henris": "^0.6.9",
-		"node-sass": "^4.9.3",
+		"node-sass": "^4.13.1",
 		"nuxt-rfg-icon": "^0.6.3",
 		"sass-loader": "^7.1.0",
 		"stylelint": "^9.10.1",
